@@ -99,7 +99,7 @@ body{
   }
   
   .header-menu {
-    font-weight: 300;
+    font-weight: 100;
   
   }
   
@@ -107,7 +107,6 @@ body{
     color:#000000;
     text-decoration:none;
     margin-left: 50px;
-    align-items: center;
     text-transform: uppercase;
     }
   
@@ -118,12 +117,12 @@ body{
     float: right;
     z-index: 100;
     cursor: pointer;
-    margin-right: 50px;
+    margin-right: 80px;
   
   }
   
   .iconos i {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 80px;
     color: #000000;
     
@@ -153,5 +152,5 @@ body{
     }
   }
   .logo{
-    margin-left: 50px;
+    margin-left: 20px;
   }
