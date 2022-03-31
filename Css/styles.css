@@ -43,7 +43,6 @@ nav {
 .nav {
   display: flex;
   justify-content: space-between;
-  height: 80px;
   width: 100%;
   align-items: center;
 }
@@ -164,4 +163,20 @@ h2{
   height: 40px;
   width: 40px;
   
+}
+/*responsividad*/
+@media (max-width:35em){
+  nav{
+    position: fixed;
+    flex-direction: column;
+    padding: 2em 3em;
+    background: rgb(133, 133, 133);
+  }
+
+}
+@media (max-width:35em){
+  .header-menu{
+    flex-direction: column;
+    
+  }
 }
