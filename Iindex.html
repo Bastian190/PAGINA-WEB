@@ -10,31 +10,32 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/c5df39abaa.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, user scalable=no, initial-scale=1.0, maximum-acale=1.0, maximum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user scalable=no, initial-scale=1.0, maximum-acale=1.0, maximum-scale=1.0">
 
 </head>
 
 <body>
     <header>
         <nav>
-            <section class="menu nav">
-                <div class="logo">
-                    <img src="img/logotienda.jpg" height="80px" alt="">
-                </div>
-                <div class="header-menu">
-                    <a href="Iindex.html">Inicio</a>
-                    <a href="Tienda">Tienda</a>
-                    <a href="Nosotros">Nosotros</a>
-                    <a href="Servicios">Servicios</a>
-                    <a href="formulario.html">Contacto</a>
-                </div>
-                <div class="iconos">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <i class="fa-solid fa-user-astronaut"></i>
-                </div>
-            </section>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="img/logotienda.jpg" alt="" class="logo">
+
+            </a>
+            <ul>
+                <li><a class="active" href="Iindex.html">Inicio</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="formulario.html">Contacto</a></li>
+            </ul>
         </nav>
+
+        <section></section>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -83,8 +84,8 @@
             <h2 style="text-align: center;" style="margin-top: 0px;">Nuestros Productos</h2>
             <div class="card-group">
                 <div class="card">
-                    <a href="InterfazMonitores.html"><img src="img/monitor.jpg" height="300px" width="300" class="card-img-top"
-                            alt="..."></a>
+                    <a href="InterfazMonitores.html"><img src="img/monitor.jpg" height="300px" width="300"
+                            class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <a href="InterfazMonitores.html">
                             <h5 class="card-title">Monitores</h5>
@@ -92,8 +93,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <a href="Sillas Gamer"><img src="img/Silla gamer.jpg" height="300px" width="300" class="card-img-top"
-                            alt="..."></a>
+                    <a href="Sillas Gamer"><img src="img/Silla gamer.jpg" height="300px" width="300"
+                            class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <a href="Sillas Gamer">
                             <h5 class="card-title">Sillas Gamer</h5>
@@ -117,21 +118,27 @@
                     <a href="Audifonos"><img src="img/Audifonos.webp" height="300px" width="300" class="card-img-top"
                             alt="..."></a>
                     <div class="card-body">
-                        <a href="Audifonos"><h5 class="card-title">Audifonos</h5></a>
+                        <a href="Audifonos">
+                            <h5 class="card-title">Audifonos</h5>
+                        </a>
                     </div>
                 </div>
                 <div class="card">
                     <a href="Sillas Gamer"><img src="img/Accesorios.jpg" height="300px" width="300" class="card-img-top"
                             alt="..."></a>
                     <div class="card-body">
-                        <a href="Sillas Gamer"><h5 class="card-title">Accesorios</h5></a>
+                        <a href="Sillas Gamer">
+                            <h5 class="card-title">Accesorios</h5>
+                        </a>
                     </div>
                 </div>
                 <div class="card">
                     <a href="Teclados"><img src="img/Mouse gamer.jpg" height="300px" width="300" class="card-img-top"
                             alt="..."></a>
                     <div class="card-body">
-                        <a href="Teclados"><h5 class="card-title">Mouse Gamer</h5></a>
+                        <a href="Teclados">
+                            <h5 class="card-title">Mouse Gamer</h5>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -141,37 +148,46 @@
     <!-- footer -->
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-            </a>
-            <span class="text-muted">&copy; 2021 GamerZoneCompany, Inc</span>
-          </div>
-      
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-muted" href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg><i class="fa-brands fa-twitter-square"></i></a></li>
-            <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/accounts/login/?"target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg><i class="fa-brands fa-instagram"></i></a></li>
-            <li class="ms-3"><a class="text-muted" href="https://es-la.facebook.com/" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="https://es-la.facebook.com/"/></svg><i class="fa-brands fa-facebook-square"></i></a></li>
-          </ul>
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap" /></svg>
+                </a>
+                <span class="text-muted">&copy; 2021 GamerZoneCompany, Inc</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted"
+                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"
+                        target="_blank"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#twitter" /></svg><i class="fa-brands fa-twitter-square"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/accounts/login/?"
+                        target="_blank"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram" /></svg><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://es-la.facebook.com/" target="_blank"><svg
+                            class="bi" width="24" height="24">
+                            <use xlink:href="https://es-la.facebook.com/" /></svg><i
+                            class="fa-brands fa-facebook-square"></i></a></li>
+            </ul>
 
         </footer>
-      </div>  
-      <div class="b-example-divider"></div>
-      
-      <div class="container">
+    </div>
+    <div class="b-example-divider"></div>
+
+    <div class="container">
         <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Politicas de Servicios</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Preguntas Frecuentes</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Nosotros</a></li>
-          </ul>
-          <p class="text-center text-muted">&copy; 2021 GamerZoneCompany, Inc</p>
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Politicas de Servicios</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Preguntas Frecuentes</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Nosotros</a></li>
+            </ul>
+            <p class="text-center text-muted">&copy; 2021 GamerZoneCompany, Inc</p>
         </footer>
-      </div>
-      </div>
-      
+    </div>
+    </div>
+
 
 
 
