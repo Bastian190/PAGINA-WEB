@@ -220,3 +220,21 @@ h2 {
   width: 40px;
 
 }
+@media (max-width: 952px){
+  .imagen-encabezado img{
+    width: 100%;
+    align-items: center;
+    margin-top: -300px;
+    margin-left: -500px;
+ }
+ .imagen-encabezado h1{
+   width: 100%;
+   float: left;
+   margin-left: 60px;
+   margin-top: 5rem;
+ }
+ .imagen-encabezado p{
+   width: 70%;
+   text-align: center;
+ }
+}
