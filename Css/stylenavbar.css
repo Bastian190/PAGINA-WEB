@@ -21,7 +21,6 @@ body{
     list-style: none;
     padding: 0;
     margin: 0;
-
     background: hsl(0 0% 0% / 0.75);
 }
 @supports (backdrop-filter: blur(1rem)){
@@ -34,7 +33,9 @@ body{
 .navegacion a{
   text-decoration: none;  
   font-weight: 700;
-    margin-inline-end: 0.75em;
+  margin-inline-end: 0.75em;
+  color: black;
+  
 }
 @media(max-width:35em){
    .navegacion{
@@ -47,12 +48,13 @@ body{
      transform: translateX(100%);
      transition: transform 350ms ease-out;
    } 
-   .navegacion[data-visible="true"]{
+   .navegacion[data-visi]{
        transform: translateX(0%);
    }
    .mobile-nav-toggle{
       display: block; 
       position: absolute;
+      background: url("");
       z-index: 9999;
       width: 2rem;
       border: 0;
@@ -61,4 +63,5 @@ body{
       top: 2rem;
       right: 2rem;
     }
+    
 }
