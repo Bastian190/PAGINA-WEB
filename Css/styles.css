@@ -98,14 +98,14 @@ li a:hover {
 
   ul {
     position: fixed;
-    width: 60%;
+    width: 70%;
     height: 100vh;
-    background: hsl(0 0% 100% / 0.1);
+    background: rgba(255, 255, 255, 0.623);
     top: 80px;
     left: -100%;
     text-align: center;
     transition: all .5s;
-    backdrop-filter: blur(0, 50rem);
+    backdrop-filter: blur(80rem, 80rem);
 
   }
 
@@ -123,7 +123,7 @@ li a:hover {
   li a:hover,
   li a.active {
     background: none;
-    color: rgb(66, 7, 66);
+    color: rgb(187, 29, 147);
   }
 
   #check:checked~ul {
@@ -238,4 +238,3 @@ h2 {
    text-align: center;
  }
 }
-a
