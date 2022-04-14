@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="img/logotienda.jpg" alt="" class="logo">
+
+            </a>
+            <ul>
+                <li><a class="active" href="Iindex.html">Inicio</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="center">
+        <h1>Registrarse</h1>
+        <h2 class="signup_link">Los campos con * son obligatorios</h2>
+        <form method="post">
+          <div class="txt_field">
+            <input type="text" required>
+            <span></span>
+            <label>Nombre *</label>
+            
+          </div>
+          <div class="txt_field">
+            <input type="text" required>
+            <span></span>
+            <label>Apellido *</label>
+          </div>
+          <div class="txt_field">
+            <input type="text" required>
+            <span></span>
+            <label>Nombre de Usuario *</label>
+          </div>
+          <div class="txt_field">
+            <input type="email" required>
+            <span></span>
+            <label>Correo *</label>
+          </div>
+          <div class="txt_field">
+            <input type="password" required>
+            <span></span>
+            <label>Contraseña *</label>
+          </div>
+          <input type="submit"  value="Registrarse">
+          <div class="signup_link">
+            ¿Tienes una cuenta?<a href="iniciarSesion.html">Iniciar sesion</a>
+          </div>
+
+        </form>
+      </div>
+  
+ 
+
+</body>
+</html>
