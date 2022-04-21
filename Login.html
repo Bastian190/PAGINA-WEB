@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio Sesion</title>
-    <link href="css/signin.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio Sesion</title>
+  <script src="https://kit.fontawesome.com/c5df39abaa.js" crossorigin="anonymous"></script>
+  <link href="css/signin.css" rel="stylesheet">
 </head>
+
 <body>
-    
-    <div class="center">
-        <h1>Iniciar sesion</h1>
-        <form method="post">
-          <div class="txt_field">
-            <input type="text" required>
-            <span></span>
-            <label>Nombre de usuario</label>
-          </div>
-          <div class="txt_field">
-            <input type="password" required>
-            <span></span>
-            <label>Contraseña</label>
-          </div>
-          <div class="pass">Olvidaste tu contraseña?</div>
-          <input type="submit" value="Iniciar sesion">
-          <div class="signup_link">
-            No estas registrado?<a href="#">Registrarse</a>
-          </div>
-        </form>
+  <div class="wrapper">
+    <header>Iniciar sesión</header>
+    <form action="#">
+      <div class="field email">
+        <div class="input-area">
+          <input type="text" placeholder="Correo electronico">
+          <i class="icon fas fa-envelope"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">El correo electrónico no puede estar en blanco</div>
       </div>
-  
- 
+      <div class="field password">
+        <div class="input-area">
+          <input type="password" placeholder="Contraseña">
+          <i class="icon fas fa-lock"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">La contraseña no puede estar en blanco</div>
+      </div>
+      <div class="pass-txt"><a href="#">Olvidaste tu contraseña?</a></div>
+      <input type="submit" value="Iniciar sesión">
+    </form>
+    <div class="sign-txt">No estas registrado? <a href="#">Registrate ahora</a></div>
+  </div>
+
+  <script src="validadorinicio.js"></script>
+
+
 
 </body>
+
 </html>

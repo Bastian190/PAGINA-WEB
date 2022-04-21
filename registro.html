@@ -1,73 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrarse</title>
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="formulario.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrarse</title>
+  <link rel="stylesheet" href="css/formulario.css">
+  <script src="https://kit.fontawesome.com/c5df39abaa.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    <header>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <a href="#" class="enlace">
-                <img src="img/logotienda.jpg" alt="" class="logo">
+  <section class="bg">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-4">
+          <div class="form-wrap">
+            <div class="form-heading">
+              <h1>Registrarse</h1>
+            </div>
+            <form name="regForm" id="regForm">
+              <div class="form-group">
+                <div class="input-area">
+                  <input type="text" class="form-control" id="name" name="" placeholder="Nombre">
+                  <p id="p1"></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-area">
+                  <input type="email" class="form-control" id="email" name="" placeholder="Correo electronico">
+                  <p id="p2"></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-area">
+                  <input type="password" class="form-control" id="password" name="" placeholder="Contraseña">
+                  <p id="p3"></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-area">
+                  <input type="password" class="form-control" id="password" name="" placeholder="Repetir contraseña">
+                  <p id="p3"></p>
+                </div>
+              </div>
+              <div class="form-group">
 
-            </a>
-            <ul>
-                <li><a class="active" href="Iindex.html">Inicio</a></li>
-                <li><a href="#">Tienda</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+                <input type="submit" class="btn btn-primary btn-block" id="submit" name="" placeholder="Registrase">
 
-    <div class="center">
-        <h1>Registrarse</h1>
-        <h2 class="signup_link">Los campos con * son obligatorios</h2>
-        <form method="post">
-          <div class="txt_field">
-            <input type="text" required>
-            <span></span>
-            <label>Nombre *</label>
-            
-          </div>
-          <div class="txt_field">
-            <input type="text" required>
-            <span></span>
-            <label>Apellido *</label>
-          </div>
-          <div class="txt_field">
-            <input type="text" required>
-            <span></span>
-            <label>Nombre de Usuario *</label>
-          </div>
-          <div class="txt_field">
-            <input type="email" required>
-            <span></span>
-            <label>Correo *</label>
-          </div>
-          <div class="txt_field">
-            <input type="password" required>
-            <span></span>
-            <label>Contraseña *</label>
-          </div>
-          <input type="submit"  value="Registrarse">
-          <div class="signup_link">
-            ¿Tienes una cuenta?<a href="iniciarSesion.html">Iniciar sesion</a>
-          </div>
+              </div>
 
-        </form>
+            </form>
+          </div>
+        </div>
       </div>
-  
- 
+    </div>
+  </section>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#submit").click(function () {
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var pass = $("#password").val();
+
+        if (name.length == "") {
+          $("#p1").text("ingresa tu nombre");
+          $("#name").focus();
+          return false;
+        } else if (email.length == "") {
+          $("#p2").text("ingresa tu correo");
+          $("#email").focus();
+          return false;
+        } else if (pass.length == "") {
+          $("#p3").text("ingresa tu contraseña");
+          $("#password").focus();
+          return false;
+        } else {
+          var con = confirm("¿ya terminaste?");
+          if (con == true) {
+            alert("Bienvenido a nuestra pagina web");
+            return true;
+          } else {
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </body>
+
 </html>
